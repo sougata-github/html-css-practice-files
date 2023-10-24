@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+section {
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 14px;
+  color: gray;
+}
+
+.card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 12px;
+  gap: 20px;
+  box-shadow: 0.1px 0.1px 18px rgb(212, 212, 212);
+}
+
+.card__image img {
+  height: 220px;
+  width: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card__text {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card__tags {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 18px;
+}
+
+.card__tags div {
+  padding: 0.4rem;
+  border: 0.5px solid rgb(161, 161, 161);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.card__tags div:hover {
+  background-color: rgb(221, 221, 221);
+  border: none;
+}
+
+.card__button {
+  padding: 0.8rem;
+  border: none;
+  background-color: coral;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.card__button:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 550px) {
+  p {
+    font-size: 12px;
+  }
+  .card {
+    width: 350px;
+  }
+  .card__image img {
+    height: 180px;
+    width: 310px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .card__button {
+    font-size: 11px;
+  }
+}
